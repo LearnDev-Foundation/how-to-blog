@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../../../client";
 // import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import ReactMarkdown from 'react-markdown';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -65,13 +66,7 @@ const onePost = () => {
           </div>
         </div>
         <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
-          {/* <BlockContent
-            blocks={postData.body}
-            projectId={sanityClient.clientConfig.projectId}
-            dataset={sanityClient.clientConfig.dataset}
-          /> */}
-
-          {postData.body}
+          <ReactMarkdown># Checking</ReactMarkdown>
         </div>
       </div>
     </div>
