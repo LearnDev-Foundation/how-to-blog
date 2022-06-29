@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import sanityClient from "../../client";
+import sanityClient from "../../../client";
 
 const allPost = () => {
   const [allPostsData, setAllPosts] = useState(null);
