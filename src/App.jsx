@@ -1,14 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import { allPost, onePost } from "./components/index";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { AllPost, OnePost } from "./components/index";
 
-const app = () => {
+const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <Route component={allPost} path="/" exact />
-        <Route component={onePost} path="/:slug" />
-      </div>
+      <Routes>
+        <Route element={<AllPost />} path="/" exact />
+        <Route element={<OnePost />} path="/:slug" />
+      </Routes>
     </BrowserRouter>
   )
 }
+
+export default App;

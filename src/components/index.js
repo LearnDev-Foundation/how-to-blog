@@ -1,7 +1,4 @@
-import allPost from "./allPosts/allPost";
-import onePost from "./onePost/onePost";
+import AllPost from "./allPosts/AllPost";
+import OnePost from "./onePost/OnePost";
 
-export {
-    allPost,
-    onePost,
-}
+export { AllPost, OnePost }

@@ -25,3 +25,5 @@ jspm_packages/
 
 # cms folder
 How-to-sanity-cms/
+
+src/client.js
