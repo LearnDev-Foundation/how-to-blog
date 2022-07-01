@@ -16,3 +16,14 @@ Please, don't use the issue tracker for **support questions**, if you need suppo
 * Don't add any classes to the codebase unless absolutely needed. Err on the side of using functions.
 * Keep feature versions as small as possible, preferably one new feature per version.
 * Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. Check out the [Code Of Conduct](CODE_OF_CONDUCT.md) for more information.
+
+## Your First Contribution?
+
+Unsure where to begin contributing to HowTo Guide? You can start by looking through these beginner and help-wanted issues: This are issues that are labelled as **Good First Issue** and **Help Wanted**. These are issues that are not yet resolved and are waiting for your contribution and should not be to difficult to resolve.
+
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
+
+At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first.
+
+If a maintainer asks you to "rebase" your PR, they're saying that a lot of code has changed, and that you need to update your branch so it's easier to merge.
+
