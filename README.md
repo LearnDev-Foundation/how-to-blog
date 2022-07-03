@@ -1,10 +1,10 @@
-**This project is still in development**
-
 # LDF HowTo Guide
+
+**This project is still in development**
 
 ![GitHub issues](https://img.shields.io/github/issues/LearnDev-Foundation/how-to-blog?style=plastic) ![GitHub pull requests](https://img.shields.io/github/issues-pr/LearnDev-Foundation/how-to-blog?style=plastic) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/LearnDev-Foundation/how-to-blog?style=plastic) ![GitHub contributors](https://img.shields.io/github/contributors/LearnDev-Foundation/how-to-blog?style=plastic) ![GitHub license](https://img.shields.io/github/license/LearnDev-Foundation/how-to-blog?style=plastic) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](https://makeapullrequest.com)
 
-description...
+Even after learning as many programming languages and frameworks as needed, their are still some needed skills that need to be learnt to make our projects easier and faster.
 
 ## Installation
 
