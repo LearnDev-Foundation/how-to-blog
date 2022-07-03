@@ -16,7 +16,13 @@ If you are in need of help at any point in ime as regrading this blog or any of 
 
 ## Contributing
 
-contributing guide...
+Considering contributing to this project? Great! Here are some tips to get you started:
+
+* Create your own fork of the code.
+* Do your changes in your fork.
+* If you like the change and think the project could use it, send a pull request.
+
+For more information on contributing to this project, please see the [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 
