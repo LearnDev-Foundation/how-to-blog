@@ -27,6 +27,16 @@ At this point, you're ready to make your changes! Feel free to ask for help; eve
 
 If a maintainer asks you to "rebase" your PR, they're saying that a lot of code has changed, and that you need to update your branch so it's easier to merge.
 
+## Writers
+
+To contribute a blog post, you'll need to write a markdown file. Create a folder for your blog post and in this folder you would need to add three (3) files:
+
+1. A `.md` file for your blog post. This file should have the title of your blog post.
+2. A `.md` file titled `README.md` which is a summary of your blog post and should contain the authors name and a link to your twitter profile.
+3. An image for your blog post.
+
+This folder should have the title of your blog post. And should be in the `posts` folder.
+
 ## Getting Started
 
 No matter how small your contribution is it is welcome. Examples of contribution welcome are:
