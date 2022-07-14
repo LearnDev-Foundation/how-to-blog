@@ -43,7 +43,7 @@ export default {
     {
       name: 'body',
       title: 'Body',
-      type: 'file',
+      type: 'blockContent',
     },
   ],
 
