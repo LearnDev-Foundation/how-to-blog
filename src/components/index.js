@@ -1,4 +1,4 @@
-import AllPost from "./allPosts/AllPost";
-import OnePost from "./onePost/OnePost";
+import Footer from "./Footer/Footer";
+import NavBar from "./NavBar/NavBar";
 
-export { AllPost, OnePost }
+export { Footer, NavBar };
