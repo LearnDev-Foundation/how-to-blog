@@ -1,0 +1,71 @@
+.app__navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba( 0, 0, 0, 0.49 );
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__navbar-logo {
+    font-family: var(--font-spartan);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--color-logo);
+}
+
+.app__navbar-menu {
+    width: 244px;
+    height: 14px;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        font-family: var(--font-roboto);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--color-white);
+
+        display: flex;
+
+        li {
+            margin: 0 10px 0 7px;
+        }
+    }
+}
+
+.app__navbar-menu_line {
+    width: 20px;
+    height: 0px;
+
+    border: 0.5px solid #E5E5E5;
+    transform: rotate(90deg);
+}
+
+.app__navbar-social {
+    background-color: blue;
+    width: 134px;
+    height: 20px;
+}
+
+.app__navbar-search_line {
+    width: 30px;
+    height: 0px;
+
+    border: 0.5px solid #E5E5E5;
+    transform: rotate(90deg);
+}
+
+.app__navbar-search {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}

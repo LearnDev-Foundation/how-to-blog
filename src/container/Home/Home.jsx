@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { NavBar } from "../../components/index"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <NavBar />
+    </div>
   )
 }
 
