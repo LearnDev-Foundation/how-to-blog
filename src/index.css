@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Lora:wght@400;700&family=Roboto:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --font-spartan: 'League Spartan', sans-serif;
+    --font-lora: 'Lora', serif;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-lightGray: #343A40;
+    --color-darkGray: #212529;
+    --color-logo: #F8F9FA;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
