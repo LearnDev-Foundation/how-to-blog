@@ -1,0 +1,80 @@
+.app__footer {
+    height: 360px;
+    background: var(--color-darkGrey);
+}
+
+.app__footer-content {
+    padding: 115px 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.app__footer-content-info {
+    color: var(--color-white);
+    width: 310px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    p {
+        font-family: var(--font-lora);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-family: var(--font-lora);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        padding-top: 14px;
+    }
+}
+
+.app__footer-content-info-socials {
+    display: flex;
+    flex-direction: row;
+    a {
+        text-decoration: none;
+        margin-right: 18px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }   
+}
+
+.app__subFooter {
+    height: 60px;
+    background: var(--color-lightGrey);
+    
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.app__subFooter-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__subFooter-content-title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-white);
+}
+
+.app__subFooter-content-social {
+    display: flex;
+    float: right;
+    position: absolute;
+    right: 70px;
+    a {
+        padding-right: 18px;
+    }
+}
+
