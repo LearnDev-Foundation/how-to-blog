@@ -27,7 +27,7 @@ const Home = () => {
       .catch(console.error);
   }, [])
   
-  console.log(articles);
+  // console.log(articles);
 
   return (
     <div className='app__home'>
