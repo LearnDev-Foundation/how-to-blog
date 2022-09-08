@@ -2350,9 +2350,9 @@ same-origin@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/same-origin/-/same-origin-0.1.1.tgz"
 
-sass@^1.54.0:
-  version "1.54.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.0.tgz#24873673265e2a4fe3d3a997f714971db2fba1f4"
+sass@^1.54.9:
+  version "1.54.9"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.54.9.tgz#b05f14ed572869218d1a76961de60cd647221762"
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
