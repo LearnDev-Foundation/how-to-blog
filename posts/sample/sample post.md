@@ -1,4 +1,4 @@
-** All heading should be in bold **
+**All heading should be in bold**
 
 `this is a code highlight`
 
