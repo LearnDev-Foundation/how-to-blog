@@ -15,7 +15,7 @@ const NavBar = () => {
                 <div className='app__navbar-menu'>
                     <ul>
                         <li>
-                            <a href='#'>Home</a>
+                            <a href='/'>Home</a>
                         </li>
                         <li>
                             <a href='#'>About</a>
@@ -50,7 +50,9 @@ const NavBar = () => {
                 <div className='app__navbar-menu_line' />
                 {/* search icon */}
                 <div className='app__navbar-search'>
-                    <img src={images.search} alt='' />
+                    <a href="/search">
+                        <img src={images.search} alt='search' />
+                    </a>
                 </div>
             </div>
         </div>

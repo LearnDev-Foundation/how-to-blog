@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import sanityClient from "../../../client";
+import { NavBar } from "../../components";
 
 const allPost = () => {
   const [allPostsData, setAllPosts] = useState(null);
@@ -27,6 +28,8 @@ const allPost = () => {
   // console.log(allPostsData);
 
   return (
+    <div>
+    <NavBar />
     <div className="bg-green-100 min-h-screen p-12">
       <div className="container mx-auto">
         <h2 className="text-5xl flex justify-center cursive">Blog Posts</h2>
@@ -60,6 +63,7 @@ const allPost = () => {
             ))}
         </div>
       </div>
+    </div>
     </div>
   )
 }

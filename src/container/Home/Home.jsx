@@ -18,6 +18,7 @@ const Home = () => {
               asset->{
                 _id,
                 url
+                
               }
             },
             author,
