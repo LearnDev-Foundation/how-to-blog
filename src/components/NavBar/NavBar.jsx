@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.scss";
+import { Link } from "react-router-dom";
 
 import { images } from "../../constants";
 
@@ -15,7 +16,7 @@ const NavBar = () => {
                 <div className='app__navbar-menu'>
                     <ul>
                         <li>
-                            <a href='/'>Home</a>
+                            <Link to='/'>Home</Link>
                         </li>
                         <li>
                             <a href='#'>About</a>
@@ -50,9 +51,9 @@ const NavBar = () => {
                 <div className='app__navbar-menu_line' />
                 {/* search icon */}
                 <div className='app__navbar-search'>
-                    <a href="/search">
+                    <Link to="search">
                         <img src={images.search} alt='search' />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
