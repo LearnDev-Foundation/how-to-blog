@@ -51,7 +51,7 @@ const NavBar = () => {
                 <div className='app__navbar-menu_line' />
                 {/* search icon */}
                 <div className='app__navbar-search'>
-                    <Link to="search">
+                    <Link to="/search">
                         <img src={images.search} alt='search' />
                     </Link>
                 </div>
