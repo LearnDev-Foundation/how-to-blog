@@ -20,7 +20,8 @@ const NavBar = () => {
     }
    //this is to reduce the space between the close menu and the search icon
     const showSearch = {
-        marginRight : toggle.isOpen ? '-26.25rem':'40px'
+        position: toggle.isOpen?'absolute': '',
+        right: toggle.isOpen?'35px':' '
     }
     
     return (
