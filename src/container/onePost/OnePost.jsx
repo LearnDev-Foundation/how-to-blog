@@ -4,6 +4,8 @@ import sanityClient from "../../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import PostContent from '../postContent/PostContent';
 
+import changeTitle from '../../../changeTitle';
+
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -36,6 +38,8 @@ const onePost = () => {
   }, [slug]);
   
   // console.log(postData);
+
+  changeTitle("HowTo Guide | Read");
 
   if (!postData) return <div>Loading...</div>;
 
