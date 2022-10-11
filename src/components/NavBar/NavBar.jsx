@@ -22,7 +22,7 @@ const NavBar = () => {
                             <a href='#'>About</a>
                         </li>
                         <li>
-                            <a href='#'>Articles</a>
+                            <Link to='/allposts'>Articles</Link>
                         </li>
                         <li>
                             <a href='#'>Contact Us</a>
@@ -37,7 +37,7 @@ const NavBar = () => {
                     <a href=''>
                         <img src={images.facebook} alt='' />
                     </a>
-                    <a href=''>
+                    <a href='https://github.com/LearnDev-Foundation/how-to-blog'>
                         <img src={images.github} alt='' />
                     </a>
                     <a href=''>

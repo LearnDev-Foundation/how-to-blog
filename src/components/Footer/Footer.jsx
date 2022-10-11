@@ -15,14 +15,14 @@ const Footer = () => {
           <div className="app__footer-content-info">
             <p>Explore</p>
             <a href="#">About</a>
-            <a href="#">Partners</a>
-            <a href="#">Job Opportunities</a>
-            <a href="#">Contribute</a>
+            {/* <a href="#">Partners</a>
+            <a href="#">Job Opportunities</a> */}
+            <a href="https://github.com/LearnDev-Foundation/how-to-blog">Contribute</a>
           </div>
           <div className="app__footer-content-info">
             <p>Our Products</p>
             <a href="#">LearnDev Foundation</a>
-            <a href="#">HowTo Guide</a>
+            <Link to="/">HowTo Guide</Link>
           </div>
           <div className="app__footer-content-info">
             <p>Connect With Us</p>
@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="#">
                 <img src={images.linkedin} alt="linkedin" />
               </a>
-              <a href="#">
+              <a href="https://github.com/LearnDev-Foundation">
                 <img src={images.github} alt="github" />
               </a>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
             <a href="#">
               <img src={images.linkedin} alt="linkedin" />
             </a>
-            <a href="#">
+            <a href="https://github.com/LearnDev-Foundation">
               <img src={images.github} alt="github" />
             </a>
           </div>
