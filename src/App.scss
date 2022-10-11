@@ -1,3 +1,28 @@
 .app {
   background-color: var(--color-white);
 }
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .app__home-latest_heading-title {
+    font-size: 1.25rem;
+    line-height: 25px;
+  }
+
+  .app__home-latest_heading-text{
+    font-size: 0.75rem;
+    line-height: 11px;
+    margin-top: 5px;
+  }
+
+  .app__home-latest{
+    height: 300px;
+    margin: 64px 70px 20px;
+  }
+  // the footer is not fixed to the bottom on my tablet if its the same on another comment out the below
+
+  // .blog-footer{
+  //   position: absolute;
+  //   bottom: 0px;
+  //   width: 100%;
+  // }
+}

@@ -99,3 +99,35 @@
     line-height: 25px;
     color: var(--color-black);
 }
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .app__home-welcome{
+        background: url(/src/assets/welcomebg.png) no-repeat left center;
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+    }
+    
+    .app__home-welcome_details{
+        padding: 160px 60px 0;
+    }
+
+    .app__home-welcome_title{
+        font-size: 1.9rem;
+        line-height: 55px;
+    }
+    .app__home-welcome_text{
+        font-size: 0.8rem;
+        width: 409px;
+        line-height: 15px;
+        height: 60px;
+    }
+    
+    .app__home-welcome_button{
+        width: 137px;
+        height: 48px;
+        border-radius: 15px;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}

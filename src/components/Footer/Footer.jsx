@@ -5,8 +5,7 @@ import { images } from "../../constants"
 
 const Footer = () => {
   return (
-    <div>
-
+    <div className='blog-footer'>
       <div className="app__footer">
         <div className="app__footer-content">
           <div className="app__footer-content-info">
