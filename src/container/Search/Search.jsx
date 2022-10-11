@@ -4,7 +4,6 @@ import { NavBar, Footer } from '../../components';
 import { Link } from 'react-router-dom';
 
 import './Search.scss';
-import { images } from "../../constants"
 
 import changeTitle from '../../../changeTitle';
 
