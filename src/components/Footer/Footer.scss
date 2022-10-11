@@ -78,3 +78,27 @@
     }
 }
 
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .app__subFooter{
+        height: 50px;
+    }
+    .app__footer{
+        height: 324px;
+    }
+    
+    .app__footer-content{
+        padding: 100px 55px;
+    }
+    .app__footer-content div a{
+        font-size: 0.6rem;
+    }
+    
+    .app__footer-content div p{
+        font-size: 0.8rem;
+    }
+
+    .app__footer-content-info-socials a img {
+        width: 16px;
+        height: 16px;
+    }
+}
