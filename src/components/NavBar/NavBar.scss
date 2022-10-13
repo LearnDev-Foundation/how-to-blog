@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width:300px) and (max-width:500px) {
+      padding: 0 30px;
+    }
 }
 
 .app__navbar-logo {
@@ -83,7 +87,7 @@
     display: none;
 }
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:300px) and (max-width:1024px){
   .app__navbar {
     height: 60px;
   }
