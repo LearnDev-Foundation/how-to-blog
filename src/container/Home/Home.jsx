@@ -53,11 +53,11 @@ const Home = () => {
             Latest Articles
           </div>
           <div className="app__home-latest_heading-text">
-            View All
+            <Link to="/allposts">View All</Link>
           </div>
         </div>
         <div className="app__home-latest_articles">
-          {/* {articles &&
+          {articles &&
             articles.map((article, index) => (
               <Link to={"/" + article.slug.current} key={article.slug.current}>
                 <div className="app__home-latest_articles-article" key={index}>
@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
               </Link>
             ))
-          } */}
+          }
         </div>
       </div>
 
