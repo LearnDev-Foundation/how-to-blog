@@ -47,7 +47,7 @@
         flex-direction: column;
         margin: 20px 40px;
 
-        width: fit-content;
+        width: fit-content
     }
 }
 
@@ -106,8 +106,7 @@
     }
 
     @media screen and (max-width: 500px) {
-        position: sticky;
-        margin-top: 5px;
+        display: none;
     }
 }
 
