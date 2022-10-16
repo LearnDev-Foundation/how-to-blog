@@ -53,7 +53,7 @@ const Home = () => {
             Latest Articles
           </div>
           <div className="app__home-latest_heading-text">
-            View All
+            <Link to="/allposts">View All</Link>
           </div>
         </div>
         <div className="app__home-latest_articles">

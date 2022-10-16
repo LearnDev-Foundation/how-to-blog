@@ -33,7 +33,9 @@ const NavBar = () => {
 
             {/* use any classname that suits you for this wrapper */}
             <div className='app-search' style={showSearch}>
-                <img src={images.search} alt='search' />
+                <Link to="/search">
+                    <img src={images.search} alt='search' />
+                </Link>
             </div>
         
             {/* added this to create hamburger menu */}
