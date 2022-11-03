@@ -1,0 +1,37 @@
+.app__onepost {
+    background-color: #e5e7eb;
+}
+
+.app__onepost-article {
+    position: absolute;
+    margin: 80px 0 0 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        margin: 60px 0 0 0;
+    }
+}
+
+.app__onepost-article_metadata {
+    img {
+        height: auto;
+        border-radius: 20px;
+
+        @media screen and (min-width: 1200px) {
+            width: 800px;
+        }
+
+        @media screen and (max-width: 1119px) {
+            width: 650px;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+}

@@ -3,8 +3,10 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import PostContent from '../postContent/PostContent';
+import { NavBar, Footer } from '../../components';
 
 import changeTitle from '../../../changeTitle';
+import './OnePost.scss'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -31,6 +33,7 @@ const onePost = () => {
             author,
             twitterLink,
             body,
+            publishedAt,
           }`
       )
       .then((data) => setPostData(data[0]))
@@ -41,38 +44,27 @@ const onePost = () => {
 
   changeTitle("HowTo Guide | Read");
 
-  if (!postData) return <div>Loading...</div>;
+  if (!postData) return <h1 className="app__onepost-loading">Loading....</h1>
 
   return (
-    <div className="min-h-screen p-12">
-      <div className="container shadow-lg mx-auto rounded-lg">
-        <div className="relative">
-          <img
-            className="w-full object-cover rounded-t"
-            src={urlFor(postData.mainImage).url()}
-            alt=""
-            style={{ height: "400px" }}
-          />
-          <div className="h-full w-full flex items-center justify-center">
-            {/* Title Section */}
-            <div className="bg-black p-5 w-full">
-              <div className='flex justify-center'>
-                <h2 className="cursive text-3xl lg:text-6xl mb-4 text-white">
-                  {postData.title}
-                </h2>
-              </div>
-              <div className="flex justify-center text-gray-800">
-                <h4 className="cursive bg-red-700 px-6 py-4 rounded text-white flex items-center pl-2 text-2xl">
-                  <a href={postData.twitterLink} target="_blank" rel='noreferrer'>{postData.author}</a> 
-                </h4>
-              </div>
-            </div>
+    <div className="app__onepost">
+        <NavBar />
+        <div className="app__onepost-article">
+          <div className="app__onepost-article_metadata">
+            <img
+              src={urlFor(postData.mainImage).url()}
+              alt="Post Image"
+            />
+            <h2>
+              {postData.title}
+            </h2>
+            <h4>
+              <a href={postData.twitterLink} target="_blank" rel='noreferrer'>{postData.author}</a> 
+            </h4>
+            <h4>{postData.publishedAt}</h4>
           </div>
-        </div>
-        <div className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full">
           <PostContent postData={ postData } />
         </div>
-      </div>
     </div>
   );
 }
