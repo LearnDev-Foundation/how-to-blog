@@ -32,8 +32,7 @@ const onePost = () => {
             },
             author,
             twitterLink,
-            body,
-            publishedAt,
+            body
           }`
       )
       .then((data) => setPostData(data[0]))
@@ -50,6 +49,7 @@ const onePost = () => {
     <div className="app__onepost">
         <NavBar />
         <div className="app__onepost-article">
+          <div className="app__onepost-article_space"></div>
           <div className="app__onepost-article_metadata">
             <img
               src={urlFor(postData.mainImage).url()}
@@ -61,10 +61,12 @@ const onePost = () => {
             <h4>
               <a href={postData.twitterLink} target="_blank" rel='noreferrer'>{postData.author}</a> 
             </h4>
-            <h4>{postData.publishedAt}</h4>
           </div>
-          <PostContent postData={ postData } />
+          <div className="app__onepost-article_content">
+            <PostContent postData={ postData } />
+          </div>
         </div>
+        <Footer />
     </div>
   );
 }
