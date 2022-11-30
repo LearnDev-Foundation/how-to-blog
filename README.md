@@ -15,7 +15,7 @@ git clone https://github.com/LearnDev-Foundation/how-to-blog.git
 
 cd how-to-blog
 
-vite install
+npm install
 ```
 
 To run the development server, you can use the following command:
