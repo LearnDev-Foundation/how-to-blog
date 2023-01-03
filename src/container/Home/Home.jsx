@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../../../client';
-import { NavBar, Footer } from "../../components";
+import { NavBar, Footer, User } from "../../components";
 
 import './Home.scss';
 
@@ -32,6 +32,7 @@ const Home = () => {
 
   return (
     <div className='app__home'>
+      <User />
       <NavBar />
       
       <div className="app__home-welcome">
