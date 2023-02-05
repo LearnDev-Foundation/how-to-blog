@@ -43,7 +43,7 @@ const Home = () => {
             We are so glad you're here. You are now part of a growing community of readers and writers, who create, contribute and collaborate with each other via LearnDev Foundation.
           </div>
           <button className="app__home-welcome_button">
-            Get Started
+            <a>Get Started</a>
           </button>
         </div>
       </div>
