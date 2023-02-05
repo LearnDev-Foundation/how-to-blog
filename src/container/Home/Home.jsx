@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../../../client';
-import { NavBar, Footer, User } from "../../components";
+import { NavBar, Footer } from "../../components";
 
 import './Home.scss';
 
@@ -32,7 +32,6 @@ const Home = () => {
 
   return (
     <div className='app__home'>
-      <User />
       <NavBar />
       
       <div className="app__home-welcome">
@@ -44,7 +43,7 @@ const Home = () => {
             We are so glad you're here. You are now part of a growing community of readers and writers, who create, contribute and collaborate with each other via LearnDev Foundation.
           </div>
           <button className="app__home-welcome_button">
-            Get Started
+            <a>Get Started</a>
           </button>
         </div>
       </div>
