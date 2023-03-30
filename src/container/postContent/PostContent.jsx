@@ -8,7 +8,7 @@ const PostContent = ({ postData }) => {
 
   return (
     <BlockContent
-      blocks={postData.body}
+      blocks={postData.body.slice(0, 50)}
       projectId={sanityClient.clientConfig.projectId}
       dataset={sanityClient.clientConfig.dataset}
     />
