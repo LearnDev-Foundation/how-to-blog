@@ -1,96 +1,86 @@
-import React, { useState } from "react";
-import "./NavBar.scss";
-import { Link } from "react-router-dom";
+import React, { useState, useRef, useEffect } from 'react';
+import Notification from '../Notification/Notification';
+import { Link, useNavigate } from 'react-router-dom';
+import logo from '../../assets/logo.svg';
+import search from '../../assets/search.svg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { images } from "../../constants";
+import './NavBar.scss';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const NavBar = () => {
-    //handles the hamburger menu state change
-    const [toggle, setToggle] = useState({
-        isOpen: false
-    })
+const NavBar = (props) => {
+    const navigate = useNavigate();
 
-     // toggles the hamburger menu open and close
-    function open(){
-        setToggle(prevToggle=>{
-            return{
-                ...prevToggle,
-                isOpen:!toggle.isOpen
-            }  
-        })
+    const [searchInput, setSearchInput] = useState("");
+    const [navbarOpen, setNavbarOpen] = useState(false);
+
+    const ref = useRef();
+
+    useEffect(() => {
+        const handler = (event) => {
+            if(
+                navbarOpen &&
+                ref.current &&
+                !ref.current.contains(event.target)
+            ) {
+                setNavbarOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handler);
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        };
+    }, [navbarOpen]);
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        setSearchInput(e.target.value);
     }
-   //this is to reduce the space between the close menu and the search icon
-    const showSearch = {
-        position: toggle.isOpen?'absolute': '',
-        right: toggle.isOpen?'35px':' '
+
+    const handleSearch = (e) => {
+        if (e.key === 'Enter') {
+            navigate(`/search?search=${searchInput}`);
+        }
     }
-    
-    return (
-        <div className='app__navbar'>
-            <div className='app__navbar-logo'>
-                <p>HowTo Guide</p>
-            </div>
 
-            {/* use any classname that suits you for this wrapper */}
-            <div className='app-search' style={showSearch}>
-                <Link to="/search">
-                    <img src={images.search} alt='search' />
-                </Link>
+  return (
+    <div className='app__navbar'>
+        <Notification />
+        <div className="app__navbar_container" ref={ref}>
+            <div className="app__navbar_container-logo">
+                <img src={logo} alt="" />
+                <h1>LearnDev Foundation</h1>
             </div>
-        
-            {/* added this to create hamburger menu */}
-            <div className={toggle.isOpen?'app_navbar-open':'app_navbar-hamburger'} onClick={open}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            {/* controls how the navbar items are being displayed on different screen size */}
-            <div className={toggle.isOpen?'app_navbar-show':'app__navbar-wrapper'}>
-                <div className='app__navbar-menu'>
-                    <ul>
-                        <li>
-                            <Link to='/'>Home</Link>
-                        </li>
-                        <li>
-                            <a href='#'>About</a>
-                        </li>
-                        <li>
-                            <Link to='/allposts'>Articles</Link>
-                        </li>
-                        <li>
-                            <a href='#'>Contact Us</a>
-                        </li>
-                    </ul>
+            <div className="app__navbar_container_menu">
+                <div className="app__navbar_container_menu-links">
+                    <Link to="/">Home</Link>
+                    <Link to="/articles">Articles</Link>
+                    <a href="https://learndevfoundation.vercel.app/#/about">About</a>
                 </div>
-
-                {/* menu-line */}
-                <div className='app__navbar-menu_line' />
-                {/* social icons */}
-                <div className='app__navbar-social'>
-                    <a href=''>
-                        <img src={images.facebook} alt='' />
-                    </a>
-                    <a href='https://github.com/LearnDev-Foundation/how-to-blog'>
-                        <img src={images.github} alt='' />
-                    </a>
-                    <a href=''>
-                        <img src={images.linkedin} alt='' />
-                    </a>
-                    <a href=''>
-                        <img src={images.twitter} alt='' />
-                    </a>
+                <div className="app__navbar_container_menu-search">
+                    <div className="input">
+                        <img src={search} alt="" />
+                        <input type="text" placeholder='Search' value={searchInput} onChange={handleChange} onKeyPress={handleSearch}/>
+                    </div>
                 </div>
-                {/* menu-line */}
-                <div className='app__navbar-menu_line' />
-                {/* search icon */}
-                <div className='app__navbar-search'>
-                    <Link to="/search">
-                        <img src={images.search} alt='search' />
-                    </Link>
-                </div>
+                <div className="app__navbar_hamburger">
+					<FontAwesomeIcon icon={faBars} beat className='.app__navbar_hamburger-icon' onClick={() => setNavbarOpen((prev) => !prev)}/>
+					<ul className={`hamburger ${navbarOpen ? "show-hamburger" : ""}`}>
+						<li onClick={() => setNavbarOpen(false)}><Link to="/">Home</Link></li>
+						<li onClick={() => setNavbarOpen(false)}><Link to="/articles">Articles</Link></li>
+						<li onClick={() => setNavbarOpen(false)}><a href="https://learndevfoundation.vercel.app/#/about" target="_blank" rel='noopener noreferrer'>About</a></li>
+                        <div className="app__navbar_hamburger-search">
+                            <div className="input">
+                                <img src={search} alt="" />
+                                <input type="text" placeholder='Search' value={searchInput} onChange={handleChange} onKeyPress={handleSearch}/>
+                            </div>
+                        </div>
+					</ul>
+				</div>
             </div>
         </div>
-    );
-};
+    </div>
+  )
+}
 
 export default NavBar;

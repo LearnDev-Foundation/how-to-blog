@@ -1,136 +1,108 @@
 .app__footer {
-    height: 360px;
-    background: var(--color-darkGrey);
-
-    @media screen and (max-width: 500px) {
-        height: fit-content;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 100px;
+    width: 100%;
 }
 
-.app__footer-content {
-    padding: 115px 70px;
+.app__footer_content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    @media screen and (max-width: 500px) {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0;
-    }
+    align-items: center;
+    padding: 0px;
+    width: 100%;
 }
 
-.app__footer-content-info {
-    color: var(--color-white);
-    width: 310px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    p {
-        font-family: var(--font-lora);
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
-    }
-    a {
-        color: var(--color-white);
-        text-decoration: none;
-        font-family: var(--font-lora);
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        padding-top: 14px;
-    }
-
-    @media screen and (max-width: 500px) {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 40px;
-
-        width: fit-content
-    }
-}
-
-.app__footer-content-info-socials {
+.app__footer_content-logo {
     display: flex;
     flex-direction: row;
-    a {
-        text-decoration: none;
-        margin-right: 18px;
-        img {
-            width: 20px;
-            height: 20px;
-        }
-    }   
-}
-
-.app__subFooter {
-    height: 60px;
-    background: var(--color-lightGrey);
-    
-    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 70px;
+    padding: 10px 0px;
 
-    @media screen and (max-width: 500px) {
-        padding: 0 40px;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    h3 {
+        font-family: var(--font-inter);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        margin-left: 10px;
     }
 }
 
-.app__subFooter-content {
+.app__footer_content-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
 
-    @media screen and (max-width: 500px) {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.app__subFooter-content-title {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--color-white);
-}
-
-.app__subFooter-content-social {
-    display: flex;
-    float: right;
-    position: absolute;
-    right: 70px;
     a {
-        padding-right: 18px;
-    }
+        font-family: var(--font-roboto);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
 
-    @media screen and (max-width: 500px) {
-        display: none;
+        text-decoration: none;
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
-    .app__subFooter{
-        height: 50px;
-    }
-    .app__footer{
-        height: 324px;
-    }
-    
-    .app__footer-content{
-        padding: 100px 55px;
-    }
-    .app__footer-content div a{
-        font-size: 0.6rem;
-    }
-    
-    .app__footer-content div p{
-        font-size: 0.8rem;
-    }
+.app__footer_content-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
 
-    .app__footer-content-info-socials a img {
-        width: 16px;
-        height: 16px;
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.app__footer_credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+
+    border-top: 1px solid #bbbbbb;
+    width: 100%;
+
+    p {
+        font-family: var(--font-roboto);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+.app__footer_credits-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    a {
+        font-family: var(--font-roboto);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+
+        text-decoration: underline;
     }
 }

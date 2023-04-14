@@ -10,8 +10,8 @@ const App = () => {
       <HashRouter>
         <Routes>
           <Route element={<Home />} path="/" exact />
-          <Route element={<AllPost />} path="/allposts" />
-          <Route element={<OnePost />} path="/:slug" />
+          <Route element={<AllPost />} path="/articles" />
+          <Route element={<OnePost />} path="/articles/:slug" />
           <Route element={<Search />} path="/search" />
         </Routes>
       </HashRouter>

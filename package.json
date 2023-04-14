@@ -8,12 +8,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
     "react": "^18.0.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.0.0",
+    "react-hot-toast": "^2.4.0",
     "react-markdown": "^8.0.3",
     "react-router-dom": "^6.4.1",
     "react-syntax-highlighter": "^15.5.0",

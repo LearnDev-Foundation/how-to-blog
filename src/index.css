@@ -1,19 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Lora:wght@400;700&family=Roboto:wght@700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;700&family=Roboto:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap');
 
 :root {
-    --font-spartan: 'League Spartan', sans-serif;
-    --font-lora: 'Lora', serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-source-code: 'Source Code Pro', monospace;
     --font-roboto: 'Roboto', sans-serif;
-
-    --color-white: #ffffff;
-    --color-black: #000000;
-    --color-lightGrey: #343A40;
-    --color-darkGrey: #212529;
-    --color-logo: #F8F9FA;
 }
 
 * {
@@ -21,8 +12,4 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
 }
