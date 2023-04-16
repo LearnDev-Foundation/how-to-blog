@@ -55,7 +55,7 @@ const NavBar = (props) => {
                 <div className="app__navbar_container_menu-links">
                     <Link to="/">Home</Link>
                     <Link to="/articles">Articles</Link>
-                    <a href="https://learndevfoundation.vercel.app/#/about">About</a>
+                    <a href="https://learndevfoundation.vercel.app/#/about" target="_blank" rel='noopener noreferrer'>About</a>
                 </div>
                 <div className="app__navbar_container_menu-search">
                     <div className="input">

@@ -1,6 +1,6 @@
-import AllPost from "./allPosts/AllPost";
+import Articles from "./Articles/Articles";
 import OnePost from "./onePost/OnePost";
 import Home from "./Home/Home";
 import Search from "./Search/Search";
 
-export { AllPost, OnePost, Home, Search };
+export { Articles, OnePost, Home, Search };

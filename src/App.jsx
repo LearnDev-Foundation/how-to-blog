@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { AllPost, OnePost, Home, Search } from "./container";
+import { Articles, OnePost, Home, Search } from "./container";
 import './App.scss';
 import CookieConsent from "react-cookie-consent"
 
@@ -10,7 +10,7 @@ const App = () => {
       <HashRouter>
         <Routes>
           <Route element={<Home />} path="/" exact />
-          <Route element={<AllPost />} path="/articles" />
+          <Route element={<Articles />} path="/articles" />
           <Route element={<OnePost />} path="/articles/:slug" />
           <Route element={<Search />} path="/search" />
         </Routes>
