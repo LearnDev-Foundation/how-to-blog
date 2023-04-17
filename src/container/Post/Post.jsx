@@ -6,14 +6,14 @@ import PostContent from '../postContent/PostContent';
 import { NavBar, Footer } from '../../components';
 
 import changeTitle from '../../../changeTitle';
-import './OnePost.scss'
+import './Post.scss'
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
 
-const onePost = () => {
+const Post = () => {
   const [postData, setPostData] = useState(null);
 
   const { slug } = useParams();
@@ -49,7 +49,6 @@ const onePost = () => {
     <div className="app__onepost">
         <NavBar />
         <div className="app__onepost-article">
-          <div className="app__onepost-article_space"></div>
           <div className="app__onepost-article_metadata">
             <img
               src={urlFor(postData.mainImage).url()}
@@ -71,4 +70,4 @@ const onePost = () => {
   );
 }
 
-export default onePost
+export default Post;
