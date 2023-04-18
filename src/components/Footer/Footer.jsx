@@ -15,14 +15,14 @@ const Footer = () => {
           <h3>LearnDev Foundation</h3>
         </div>
         <div className="app__footer_content-links">
-          <a href="https://learndevfoundation.vercel.app/">LearnDev Foundation</a>
+          <a href="https://learndevfoundation.vercel.app/" target="_blank" rel="noopener noreferrer">LearnDev Foundation</a>
           <a href="#">Academy</a>
           <a href="#">Roadmaps</a>
         </div>
         <div className="app__footer_content-socials">
-          <a href="mailto:learndevfoundation@gmail.com"><img src={email} alt="" /></a>
+          <a href="mailto:learndevfoundation@gmail.com" target="_blank" rel="noopener noreferrer"><img src={email} alt="" /></a>
           <a href="https://github.com/learndev-foundation" target="_blank" rel="noopener noreferrer"><img src={github} alt="" /></a>
-          <a href="#"><img src={twitter} alt="" /></a>
+          <a href="https://twitter.com/LearnDevFdn" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="" /></a>
         </div>
       </div>
       <div className="app__footer_credits">
