@@ -32,7 +32,7 @@ const Search = (props) => {
       .catch(console.error);
   }, [])
 
-  const searchTerm = location.search.slice(8).replace("%20", " ");
+  const searchTerm = location.search.slice(8).replace(/%20/g, " ");
   // console.log(articles);
 
   return (
@@ -44,7 +44,13 @@ const Search = (props) => {
         </div>
         <div className="app__search_result">
           {articles && articles.filter(
-            (article) => article.title.toLowerCase().includes(searchTerm.toLowerCase())
+            (article) => {
+              if (article.title.toLowerCase().includes(searchTerm.toLowerCase())) {
+                return article;
+              } else if (article.articleSummary.toLowerCase().includes(searchTerm.toLowerCase())) {
+                return article;
+              }
+            }
           ).map((article) => {
             return (
               <div key={article.slug.current} className="app__search_result-article">
